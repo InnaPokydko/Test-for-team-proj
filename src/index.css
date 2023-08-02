@@ -1,5 +1,11 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  /* Common styles for all themes */
+  --background-color: #FCFCFC;
+  --text-color: #161616;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +13,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Dark Theme */
+body.dark {
+  --background-color: #1F1F1F;
+  --text-color: #FFFFFF;
+}
+
+/* Violet Theme */
+body.violet {
+  --background-color: #6a1b9a;
+  --text-color: #fff;
 }
