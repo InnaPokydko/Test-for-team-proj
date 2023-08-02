@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Test-for-team-proj/static/css/main.db04b3ef.css",
+    "main.js": "/Test-for-team-proj/static/js/main.456c5985.js",
+    "index.html": "/Test-for-team-proj/index.html",
+    "main.db04b3ef.css.map": "/Test-for-team-proj/static/css/main.db04b3ef.css.map",
+    "main.456c5985.js.map": "/Test-for-team-proj/static/js/main.456c5985.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db04b3ef.css",
+    "static/js/main.456c5985.js"
+  ]
+}
