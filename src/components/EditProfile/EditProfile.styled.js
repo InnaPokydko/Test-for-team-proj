@@ -24,7 +24,7 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-width: 100%;
+width: 335px;
 padding: 24px;
 
 border-radius: 8px;
@@ -33,9 +33,10 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 background-color: #1f1f1f;
 
 cubic-bezier(0.4, 0, 0.2, 1)
- @media screen and (min-width: 375px) {
-  width: 335px;
-}
+
+//  @media screen and (min-width: 375px) {
+//   width: 335px;
+// }
 @media screen and (min-width: 768px) {
   width: 400px;
 `;
