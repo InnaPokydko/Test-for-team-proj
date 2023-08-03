@@ -21,14 +21,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* Dark Theme */
-body.dark {
-  --background-color: #1F1F1F;
-  --text-color: #FFFFFF;
-}
 
-/* Violet Theme */
-body.violet {
-  --background-color: #6a1b9a;
-  --text-color: #fff;
-}
+
+
+

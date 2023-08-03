@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { ThemeProvider } from 'hooks/themeContext';
+
 import Header from './Header/Header';
 
 const App = () => {
-  const [currentTheme, setCurrentTheme] = useState('dark');
-
-  const handleThemeChange = (theme) => {
-    setCurrentTheme(theme);
-  };
-
   return (
-    <Header onThemeChange={handleThemeChange} />
+    <ThemeProvider>
+      <Header />
+    </ThemeProvider>
   );
 };
 

@@ -13,7 +13,7 @@ export const fetchProfileData = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       console.log(credentials);
-      const res = await axios.get('/users/signup', credentials);
+      const res = await axios.get('/users/profile', credentials);
       // After successful registration, add the token to the HTTP header
       setAuthHeader(res.data.token);
       return res.data;
@@ -23,7 +23,7 @@ export const fetchProfileData = createAsyncThunk(
 );
 
 export const updateProfileOnServer = createAsyncThunk(
-  'profile/updateProfileOnServer',
+  'user/updateProfileOnServer',
   async data => {
     try {
       const response = await axios.put('/api/profile', data);
