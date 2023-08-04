@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Container, Avatar } from './UserInfo.styled';
+import { Container, Avatar, UserIcon } from './UserInfo.styled';
 import EditProfile from 'components/EditProfile/EditProfile';
+import Sprite from '../../svg/sprite.svg';
 
 const UserInfo = () => {
   const { photo, name } = useSelector(state => state.profile);
@@ -18,7 +19,7 @@ const UserInfo = () => {
   return (
     <Container>
       <div>{name}</div>
-      <Avatar src={photo} alt="User Avatar" onClick={openModal} />
+    {<Avatar src={photo} alt="User Avatar" onClick={openModal} /> || <UserIcon><use href={`${Sprite}#icon-user`} /></UserIcon>}
       {isModalOpen && <EditProfile onClose={closeModal} />}
     </Container>
   );
