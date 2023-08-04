@@ -4,7 +4,7 @@ import { Container, Avatar, UserIcon } from './UserInfo.styled';
 import EditProfile from 'components/EditProfile/EditProfile';
 import Sprite from '../../svg/sprite.svg';
 
-const UserInfo = () => {
+const UserInfo = ({theme}) => {
   const { photo, name } = useSelector(state => state.profile);
   const [isModalOpen, setModalOpen] = React.useState(false);
 
@@ -19,7 +19,13 @@ const UserInfo = () => {
   return (
     <Container>
       <div>{name}</div>
-    {<Avatar src={photo} alt="User Avatar" onClick={openModal} /> || <UserIcon><use href={`${Sprite}#icon-user`} /></UserIcon>}
+      {photo ? (
+        <Avatar src={photo} alt="User Avatar" onClick={openModal} />
+      ) : (
+        <UserIcon className={`icon-user theme-${theme}`}>
+          <use href={`${Sprite}#icon-user`} />
+        </UserIcon>
+      )}
       {isModalOpen && <EditProfile onClose={closeModal} />}
     </Container>
   );

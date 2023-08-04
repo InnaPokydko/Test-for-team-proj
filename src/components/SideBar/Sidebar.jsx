@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 import { SectionBox } from './SideBar.styled';
 
  const SideBar = ({ theme, isOpen }) => (
@@ -9,7 +9,3 @@ import { SectionBox } from './SideBar.styled';
 
 export default SideBar
 
-SideBar.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.any.isRequired,
-};

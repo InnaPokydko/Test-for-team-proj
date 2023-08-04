@@ -1,3 +1,34 @@
+// import React, { useEffect, useState } from 'react';
+// import { useSelector } from 'react-redux';
+
+// const ThemeContext = React.createContext();
+
+// export const useTheme = () => React.useContext(ThemeContext);
+
+// export const ThemeProvider = ({ children }) => {
+//   const themeFromRedux = useSelector(state => state.theme);
+//   const [theme, setTheme] = useState(themeFromRedux);
+
+//   useEffect(() => {
+//     const storedTheme = localStorage.getItem('theme');
+//     if (storedTheme && theme !== storedTheme) {
+//       setTheme(storedTheme);
+//     }
+//   }, []);
+
+//   useEffect(() => {
+//     localStorage.setItem('theme', theme);
+//   }, [theme]);
+
+//   return (
+//     <ThemeContext.Provider value={{ theme }}>
+//       {children}
+//     </ThemeContext.Provider>
+//   );
+// };
+
+
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 
