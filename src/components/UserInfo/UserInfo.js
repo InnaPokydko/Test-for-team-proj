@@ -26,12 +26,15 @@ const UserInfo = ({theme}) => {
           <use href={`${Sprite}#icon-user`} />
         </UserIcon>
       )}
-      {isModalOpen && <EditProfile onClose={closeModal} />}
+      {isModalOpen && <EditProfile theme={theme} onClose={closeModal} />}
     </Container>
   );
 };
 
 export default UserInfo;
+
+
+
 
 // import React, { useState } from 'react';
 // import EditProfile from 'components/EditProfile/EditProfile';

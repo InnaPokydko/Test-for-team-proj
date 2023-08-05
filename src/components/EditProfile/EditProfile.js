@@ -17,7 +17,7 @@ import {
 import { updateProfileData } from 'redux/profileSlice';
 import Sprite from '../../svg/sprite.svg';
 
-const EditProfile = ({ onClose }) => {
+const EditProfile = ({ theme, onClose }) => {
   const { photo, name, email, password } = useSelector(state => state.profile);
   const dispatch = useDispatch();
 
@@ -32,7 +32,7 @@ const EditProfile = ({ onClose }) => {
 
   return (
     <Container>
-      <EditProfileModal>
+      <EditProfileModal className={`theme-${theme}`}>
         <div>Edit profile</div>
         <ModalCloseButton onClick={onClose}>Close</ModalCloseButton>
         <Formik
@@ -83,18 +83,18 @@ const EditProfile = ({ onClose }) => {
                 />
               </PhotoInputWrapper>
               <label>
-                <FieldUser type="text" name="newName" />
+                <FieldUser type="text" name="newName" className={`theme-${theme}`}/>
                 <ErrorMessage name="newName" component="div" />
               </label>
               <label>
-                <FieldUser type="email" name="newEmail" />
+                <FieldUser type="email" name="newEmail" className={`theme-${theme}`}/>
                 <ErrorMessage name="newEmail" component="div" />
               </label>
               <label>
-                <FieldUser type="password" name="newPassword" />
+                <FieldUser type="password" name="newPassword" className={`theme-${theme}`}/>
                 <ErrorMessage name="newPassword" component="div" />
               </label>
-              <SaveBtn type="submit" disabled={isSubmitting}>
+              <SaveBtn type="submit" className={`theme-${theme}`} disabled={isSubmitting}>
                 Save
               </SaveBtn>
             </FormBox>

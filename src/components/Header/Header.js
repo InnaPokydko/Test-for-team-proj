@@ -73,7 +73,7 @@ const Header = () => {
         <option value="violet">Violet</option>
       </select>
       )}
-        <UserInfo />
+        <UserInfo theme={theme}/>
       </HeaderWrap>
       {isSideBarOpen && <SideBar theme={theme} isOpen={isSideBarOpen} />}
       
