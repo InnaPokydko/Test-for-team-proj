@@ -10,6 +10,7 @@ import {
   MenuIcon,
   HeaderWrap,
   SelectIcon,
+  ThemeSelector,
 } from './Header.styled';
 import Sprite from '../../svg/sprite.svg';
 
@@ -67,12 +68,14 @@ const Header = () => {
           Theme
         </HeaderNav>
         {isThemeSelectorOpen && ( 
-        <select value={theme} onChange={onToggleTheme}>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-        <option value="violet">Violet</option>
-      </select>
-      )}
+          <ThemeSelector>
+            <select value={theme} onChange={onToggleTheme}>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+              <option value="violet">Violet</option>
+            </select>
+          </ThemeSelector>
+        )}
         <UserInfo theme={theme}/>
       </HeaderWrap>
       {isSideBarOpen && <SideBar theme={theme} isOpen={isSideBarOpen} />}
