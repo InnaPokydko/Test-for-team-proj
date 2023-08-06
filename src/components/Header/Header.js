@@ -54,7 +54,7 @@ const Header = () => {
     return (
     <Container className={`theme-${theme}`}>
       <div onClick={toggleSideBar}>
-        <MenuIcon className={`icon-menu theme-${theme}`} width="32" height="32">
+        <MenuIcon className={`icon-menu`} width="32" height="32">
           <use href={`${Sprite}#icon-menu`} />
         </MenuIcon>
       </div>
