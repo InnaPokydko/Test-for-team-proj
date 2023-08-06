@@ -17,7 +17,7 @@ const UserInfo = ({theme}) => {
   };
 
   return (
-    <Container>
+    <Container className={`theme-${theme}`}>
       <div>{name}</div>
       {photo ? (
         <Avatar src={photo} alt="User Avatar" onClick={openModal} />

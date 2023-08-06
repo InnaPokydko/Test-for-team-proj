@@ -15,7 +15,7 @@ export const Container = styled.div`
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.36px;
-  z-index: 999;
+  // z-index: 999;
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 `;

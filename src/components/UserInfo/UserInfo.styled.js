@@ -10,9 +10,9 @@ margin-left: 14px;
 export const Avatar = styled.svg`
   width: 32px;
   height: 32px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
   // &.theme-light {
   //   background-color: #fcfcfc;
   //    }

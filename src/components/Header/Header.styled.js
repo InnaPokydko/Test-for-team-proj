@@ -68,6 +68,7 @@ export const HeaderWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 14px;
+  position: relative;
 `;
 
 export const SelectIcon = styled.svg`
@@ -93,24 +94,22 @@ export const SelectIcon = styled.svg`
 //  `;
 
 export const ThemeSelector = styled.div`
-// position: absolute;
-// top: 50%;
-// left: 50%;
-// transform: translate(-50%, -50%);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   padding: 18px 44px 18px 18px;
-//   font-family: Poppins;
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: normal;
-//   letter-spacing: -0.28px;
-//   border-radius: 8px;
-//   border: 1px solid ${(props) => (props.theme === 'dark' ? '#BEDBB0' : '#ECEDFD')};
-//   background: ${(props) => (props.theme === 'dark' ? '#151515' : '#FCFCFC')};
-//   box-shadow: 0px 4px 16px 0px rgba(17, 17, 17, 0.10);
-//   align-items: center;
-//   z-index: 1; 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px 44px 18px 18px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px 0px rgba(17, 17, 17, 0.10);
+  align-items: center;
+  // z-index: 1; 
 `;
