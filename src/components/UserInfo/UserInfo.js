@@ -4,18 +4,18 @@ import { Container, Avatar, UserIcon } from './UserInfo.styled';
 import EditProfile from 'components/EditProfile/EditProfile';
 import Sprite from '../../svg/sprite.svg';
 
-const setDefaultAvatar = (activeUserTheme) => {
-  switch (activeUserTheme) {
-    case 'dark':
-      return userDark;
-    case 'light':
-      return userLight;
-    case 'violet':
-      return userViolet;
-    default:
-      return null; 
-  }
-};
+// const setDefaultAvatar = (activeUserTheme) => {
+//   switch (activeUserTheme) {
+//     case 'dark':
+//       return userDark;
+//     case 'light':
+//       return userLight;
+//     case 'violet':
+//       return userViolet;
+//     default:
+//       return null; 
+//   }
+// };
 
 const UserInfo = ({ theme }) => {
   const { photo, name } = useSelector((state) => state.profile);
@@ -29,7 +29,7 @@ const UserInfo = ({ theme }) => {
     setModalOpen(false);
   };
 
-  const defaultAvatar = setDefaultAvatar(theme);
+  // const defaultAvatar = setDefaultAvatar(theme);
 
   return (
     <Container className={`theme-${theme}`}>
@@ -38,7 +38,7 @@ const UserInfo = ({ theme }) => {
         <Avatar src={photo} alt="User Avatar" onClick={openModal} />
       ) : (
         <UserIcon className={`icon-user theme-${theme}`}>
-          <use href={defaultAvatar} />
+          <use href={`${Sprite}#icon-user`} />
         </UserIcon>
       )}
       {isModalOpen && <EditProfile theme={theme} onClose={closeModal} />}
