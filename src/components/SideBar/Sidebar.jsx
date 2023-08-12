@@ -1,13 +1,13 @@
 import React from 'react';
-import { Container} from 'react-bootstrap';
+// import { Container} from 'react-bootstrap';
 import TeamMemberCard from 'components/TeamMemberCard/TeamMemberCard';
 import teamMembers from 'teamMembersData';
-import { RowContainer, ColCards } from './SideBar.styled';
+import { RowContainer, ColCards, ContainerWrap } from './SideBar.styled';
 
 
 const SideBar = () => {
   return (
-    <Container>
+    <ContainerWrap>
       <h1 className="text-center my-4">Our Team</h1>
       <RowContainer>
         {teamMembers.map((member, index) => (
@@ -23,7 +23,7 @@ const SideBar = () => {
           </ColCards>
         ))}
       </RowContainer>
-    </Container>
+    </ContainerWrap>
   );
 };
 

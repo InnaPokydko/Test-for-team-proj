@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardGroup } from 'react-bootstrap';
+// import { CardGroup } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import {
@@ -14,7 +14,7 @@ import {
 
 const TeamMemberCard = ({ name, role, avatar, telegram, github, linkedin }) => {
   return (
-    <CardGroup>
+    <div>
       <StyledCard>
       <StyledCardBody>
         <StyledCardImg variant="top" src={avatar} />
@@ -39,7 +39,7 @@ const TeamMemberCard = ({ name, role, avatar, telegram, github, linkedin }) => {
         </SocialLinks>
       </StyledCardBody>
     </StyledCard>
-    </CardGroup>
+    </div>
     
   );
 };

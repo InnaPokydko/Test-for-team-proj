@@ -1,5 +1,11 @@
 import styled from "@emotion/styled";
-import { Row, Col} from 'react-bootstrap';
+import { Row, Col, Container} from 'react-bootstrap';
+
+export const ContainerWrap = styled(Container)`
+display: flex;
+flex-wrap: wrap;
+    align-items: center;      
+`
 
 export const RowContainer = styled(Row)`
 display: flex;
