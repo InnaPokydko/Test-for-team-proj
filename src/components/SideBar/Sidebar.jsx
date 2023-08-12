@@ -1,15 +1,17 @@
 import React from 'react';
-import { Container, Row, Col} from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import TeamMemberCard from 'components/TeamMemberCard/TeamMemberCard';
 import teamMembers from 'teamMembersData';
+import { RowContainer, ColCards } from './SideBar.styled';
 
- const SideBar = () => {
+
+const SideBar = () => {
   return (
     <Container>
       <h1 className="text-center my-4">Our Team</h1>
-      <Row>
+      <RowContainer>
         {teamMembers.map((member, index) => (
-          <Col key={index} md={4} sm={6} className="mb-4">
+          <ColCards key={index} sm={4} className="holder">
             <TeamMemberCard
               name={member.name}
               role={member.role}
@@ -18,13 +20,12 @@ import teamMembers from 'teamMembersData';
               github={member.github}
               linkedin={member.linkedin}
             />
-          </Col>
+          </ColCards>
         ))}
-      </Row>
+      </RowContainer>
     </Container>
   );
 };
-
 
 export default SideBar
 

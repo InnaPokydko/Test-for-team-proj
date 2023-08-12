@@ -1,37 +1,48 @@
 import React from 'react';
-// import { Card } from 'react-bootstrap';
+import { CardGroup } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { StyledCard, StyledCardImg,  StyledCardBody, StyledCardTitle, StyledCardText, SocialLinks, SocialIcon } from './TeamMemberCard.styled';
+import {
+  StyledCard,
+  StyledCardImg,
+  StyledCardBody,
+  StyledCardTitle,
+  StyledCardText,
+  SocialLinks,
+  SocialIcon,
+} from './TeamMemberCard.styled';
 
 const TeamMemberCard = ({ name, role, avatar, telegram, github, linkedin }) => {
-    return (
+  return (
+    <CardGroup>
       <StyledCard>
+      <StyledCardBody>
         <StyledCardImg variant="top" src={avatar} />
-        <StyledCardBody>
-          <StyledCardTitle>{name}</StyledCardTitle>
-          <StyledCardText>{role}</StyledCardText>
-          <SocialLinks>
-            {telegram && (
-              <SocialIcon href={telegram}>
-                <FaTelegram />
-              </SocialIcon>
-            )}
-            {github && (
-              <SocialIcon href={github}>
-                <FaGithub />
-              </SocialIcon>
-            )}
-            {linkedin && (
-              <SocialIcon href={linkedin}>
-                <FaLinkedin />
-              </SocialIcon>
-            )}
-          </SocialLinks>
-        </StyledCardBody>
-      </StyledCard>
-    );
-  };
+        <StyledCardTitle>{name}</StyledCardTitle>
+        <StyledCardText>{role}</StyledCardText>
+        <SocialLinks>
+          {telegram && (
+            <SocialIcon href={telegram}>
+              <FaTelegram />
+            </SocialIcon>
+          )}
+          {github && (
+            <SocialIcon href={github}>
+              <FaGithub />
+            </SocialIcon>
+          )}
+          {linkedin && (
+            <SocialIcon href={linkedin}>
+              <FaLinkedin />
+            </SocialIcon>
+          )}
+        </SocialLinks>
+      </StyledCardBody>
+    </StyledCard>
+    </CardGroup>
+    
+  );
+};
 
 TeamMemberCard.propTypes = {
   name: PropTypes.string.isRequired,
@@ -43,9 +54,3 @@ TeamMemberCard.propTypes = {
 };
 
 export default TeamMemberCard;
-
-
-
-
-
-

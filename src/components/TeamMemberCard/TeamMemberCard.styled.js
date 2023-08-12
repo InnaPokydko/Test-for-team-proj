@@ -3,6 +3,8 @@ import { Card } from 'react-bootstrap';
 
 export const StyledCard = styled(Card)`
   border: none;
+  display: flex;
+  justify-content: center;
   transition: transform 0.3s;
 
   &:hover {
@@ -17,6 +19,7 @@ export const StyledCardImg = styled(Card.Img)`
 
 export const StyledCardBody = styled(Card.Body)`
   text-align: center;
+  width: 200px;
 `;
 
 export const StyledCardTitle = styled(Card.Title)`
