@@ -37,12 +37,12 @@ const teamMembers = [
    },
   {
     index: 5,
-    name: 'Ярослав',
+    name: 'Ярослав Ребрина',
     role: 'BackEnd Developer',
     avatar: 'image',
-    telegram: '',
-    github: '',
-    linkedin: '',
+    telegram: '@yarikDobriy',
+    github: 'https://github.com/YaroslavRebrina',
+    linkedin: 'https://www.linkedin.com/in/yaroslav-rebrina-82038026b/',
   },
   {
     index: 6,
