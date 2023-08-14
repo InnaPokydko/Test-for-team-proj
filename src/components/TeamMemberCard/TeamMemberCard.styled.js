@@ -10,7 +10,7 @@ export const StyledCard = styled(Card)`
   display: flex;
   justify-content: center;
   transition: transform 0.3s;
-  margin: 10px;
+  margin: 20px;
   width: 180px;
  height: 225px;
  box-shadow: 0px 4px 16px 0px rgba(17, 17, 17, 0.10);

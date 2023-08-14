@@ -18,7 +18,7 @@ const TeamMemberCard = ({ name, role, avatar, telegram, github, linkedin }) => {
     <div>
       <StyledCard>
       <StyledCardBody>
-        <StyledCardImg variant="top" src={avatar}   alt="name" width="100"/>
+        <StyledCardImg variant="top" src={avatar} width="100"/>
         <StyledCardTitle>{name}</StyledCardTitle>
         <StyledCardText>{role}</StyledCardText>
         <SocialLinks>

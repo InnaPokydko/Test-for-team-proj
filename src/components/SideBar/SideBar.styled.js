@@ -5,8 +5,12 @@ export const ContainerWrap = styled(Container)`
 display: flex;
 gap: 50px;
 flex-wrap: wrap;
-    align-items: center;      
+    align-items: center; 
+    width: 1100px;
+    margin-left: 40px;
 `
+export const Text = styled.h1`
+color:   #FFFFFF;`  
 
 export const RowContainer = styled(Row)`
 display: flex;
@@ -51,7 +55,6 @@ display: flex;
     `
  
     export const ImgBox = styled.div`
-    background-image: url( 'https://slidebazaar.com/wp-content/uploads/2018/12/Infographic-teamwork-PowerPoint-template.jpg');
-    align-items: center;`
+        align-items: center;`
     
     

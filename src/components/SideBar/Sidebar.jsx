@@ -2,13 +2,13 @@ import React from 'react';
 // import { Container} from 'react-bootstrap';
 import TeamMemberCard from 'components/TeamMemberCard/TeamMemberCard';
 import teamMembers from 'teamMembersData';
-import { RowContainer, ColCards, ContainerWrap } from './SideBar.styled';
+import { RowContainer, ColCards, ContainerWrap, Text} from './SideBar.styled';
 
 
 const SideBar = () => {
   return (
     <ContainerWrap>
-      <h1 className="text-center my-4">Our Dream Team</h1>
+      <Text>Our Dream Team</Text>
       <RowContainer>
         {teamMembers.map((member, index) => (
           <ColCards key={index} sm={4} className="holder">
