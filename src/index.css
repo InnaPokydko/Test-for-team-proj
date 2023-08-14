@@ -15,7 +15,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
   color: var(--text-color);
-}
+  background-image: url( 'https://st.depositphotos.com/1084193/1999/v/450/depositphotos_19997071-great-light-futuristic-computer-technology-business-background-b.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;

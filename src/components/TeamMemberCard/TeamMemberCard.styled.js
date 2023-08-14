@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Card } from 'react-bootstrap';
 
 export const StyledContainer = styled.div`
-background-image: url( https://img.freepik.com/vecteurs-libre/fond-geometrique-degrade_23-2149337509.jpg);
+
 `;
 
 export const StyledCard = styled(Card)`
@@ -14,7 +14,7 @@ export const StyledCard = styled(Card)`
   margin: 20px;
   width: 190px;
  height: 254px;
- background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+ background-image: linear-gradient(to right, #ddd6f3 0%, #faaca8 51%, #ddd6f3 100%);
 
   &:hover {
     transform: translateY(-10px);
