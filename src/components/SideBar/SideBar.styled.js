@@ -3,6 +3,7 @@ import { Row, Col, Container} from 'react-bootstrap';
 
 export const ContainerWrap = styled(Container)`
 display: flex;
+gap: 50px;
 flex-wrap: wrap;
     align-items: center;      
 `
@@ -13,24 +14,24 @@ flex-wrap: wrap;
     align-items: center;      
 `
 export const ColCards = styled(Col)`
-.col-lg-1 {
-    flex: 0 0 50%;
-    max-width: 50%;
+// .col-lg-1 {
+//     flex: 0 0 50%;
+//     max-width: 50%;
 
 
-     .col-md-2 {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-  }
+//      .col-md-2 {
+//     flex: 0 0 33.33%;
+//     max-width: 33.33%;
+//   }
 
-  .col-sm-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
+//   .col-sm-3 {
+//     flex: 0 0 25%;
+//     max-width: 25%;
+//   }
 
-   .col-4 {
-    flex: 0 0 25%;
-    max-width: 25%;
+//    .col-4 {
+//     flex: 0 0 25%;
+//     max-width: 25%;
   }`
 
 export const StyledCard = styled.div`
@@ -49,3 +50,8 @@ display: flex;
     color: #333;
     `
  
+    export const ImgBox = styled.div`
+    background-image: url( 'https://slidebazaar.com/wp-content/uploads/2018/12/Infographic-teamwork-PowerPoint-template.jpg');
+    align-items: center;`
+    
+    

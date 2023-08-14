@@ -13,11 +13,12 @@ import {
 } from './TeamMemberCard.styled';
 
 const TeamMemberCard = ({ name, role, avatar, telegram, github, linkedin }) => {
+  console.log(avatar);
   return (
     <div>
       <StyledCard>
       <StyledCardBody>
-        <StyledCardImg variant="top" src={avatar} />
+        <StyledCardImg variant="top" src={avatar}   alt="name" width="100"/>
         <StyledCardTitle>{name}</StyledCardTitle>
         <StyledCardText>{role}</StyledCardText>
         <SocialLinks>

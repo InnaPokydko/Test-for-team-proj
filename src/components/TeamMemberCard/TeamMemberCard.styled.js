@@ -6,15 +6,15 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledCard = styled(Card)`
-  // border: none;
   border-radius: 40px 0 40px 0;
   display: flex;
   justify-content: center;
   transition: transform 0.3s;
-  margin: 20px;
-  width: 190px;
- height: 254px;
- background-image: linear-gradient(to right, #ddd6f3 0%, #faaca8 51%, #ddd6f3 100%);
+  margin: 10px;
+  width: 180px;
+ height: 225px;
+ box-shadow: 0px 4px 16px 0px rgba(17, 17, 17, 0.10);
+//  background-image: linear-gradient(to right, #ddd6f3 0%, #faaca8 51%, #ddd6f3 100%);
 
   &:hover {
     transform: translateY(-10px);
@@ -22,7 +22,8 @@ export const StyledCard = styled(Card)`
 `;
 
 export const StyledCardImg = styled(Card.Img)`
-  max-height: 250px;
+width: 100px
+  height: 150px;
   object-fit: cover;
 `;
 
